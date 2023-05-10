@@ -1,3 +1,6 @@
 [submodule "registereditems/ogc-utils/sosa"]
 	path = registereditems/unstable/sosa
 	url = https://github.com/opengeospatial/ogcapi-sosa.git
+[submodule "registereditems/geo/features/bbox"]
+	path = registereditems/geo/features/bbox
+	url = https://github.com/doublebyte1/bbox-bblock.git
