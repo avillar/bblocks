@@ -7,11 +7,13 @@ required:
   - status
   - dateTimeAddition
   - itemClass
+  - register
   - version
   - dateOfLastChange
   - sources
   - maturity
   - scope
+  - geo
 properties:
   itemIdentifier:
     description: Unique identifier for this Building Block.
@@ -55,6 +57,8 @@ properties:
       - path
       - api
       - datatype
+      - header
+      - object
   register:
     description: Register to which this Building Block belongs.
     type: string
@@ -109,6 +113,13 @@ properties:
       - mature
       - proposal
       - stable
+  scope:
+    description: Please add a relevant description here (I am not sure what scope is).
+    enum:
+      - unstable
+  geo:
+    description: Indicates whether this building block is geospatial (True) or not (False).
+    type: boolean
   schema:
     description: List of URLs for JSON schemas of this Building Block.
     type: array
